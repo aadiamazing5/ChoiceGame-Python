@@ -17,6 +17,7 @@ def game():
 
     first_choice = raw_input("\nType 1, 2 or 3 below. \n")
 
+    print "-"*90
     if first_choice == "1":
         print """\nYou run up the left stairway as fast as you can, but fail to
         notice a couple of steps missing. You fall through the crack to your
@@ -32,6 +33,7 @@ def game():
         3. Yellow door with a star symbol."""
 
         second_choice = raw_input("Type 1, 2, or 3 below. \n")
+        print "-"*90
 
         if second_choice == "1":
             print """\nYou open the door, and find yourself face to face with
@@ -55,12 +57,13 @@ def game():
 
             third_choice = raw_input("You enter the following code into the pad:\n")
 
+            print "-"*90
             if third_choice == "119":
                 print """The lockpad lights up green, and you hear the lock open.
                 You run through the door, and get into an escape pod. You see the
                 alien mob running into the room, but you rocket out of the hangar
                 before they catch you."""
-                print "Congratulations! You have beat Space Escape! Thanks for playing."
+                print "\nCongratulations! You have beat Space Escape! Thanks for playing."
                 exit()
 
             else:
